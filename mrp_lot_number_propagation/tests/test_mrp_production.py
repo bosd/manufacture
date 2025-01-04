@@ -34,7 +34,7 @@ class TestMrpProduction(Common):
 
     def _set_qty_done(self, order):
         for line in order.move_raw_ids.move_line_ids:
-            line.qty_done = line.product_uom_qty
+            line.qty_done = line.reserved_uom_qty
         order.qty_producing = order.product_qty
 
     def test_order_propagated_lot_producing(self):
