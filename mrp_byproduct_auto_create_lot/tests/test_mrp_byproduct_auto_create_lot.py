@@ -38,7 +38,7 @@ class TestMrpByproductAutoLot(CommonMrpByproductAutoCreateLot, TransactionCase):
         self.production.button_mark_done()
 
         # Check if a lot number was created and assigned to the by-product move line
-        byproduct_move_line = self.production.move_byproduct_line_ids.filtered(
+        byproduct_move_line = self.production.move_byproduct_ids.move_line_ids.filtered(
             lambda ml: ml.product_id == self.product_b
         )
         self.assertTrue(
@@ -55,7 +55,7 @@ class TestMrpByproductAutoLot(CommonMrpByproductAutoCreateLot, TransactionCase):
         self.production.qty_producing = 1.0
         self.production.button_mark_done()
 
-        byproduct_move_line = self.production.move_byproduct_line_ids.filtered(
+        byproduct_move_line = self.production.move_byproduct_ids.move_line_ids.filtered(
             lambda ml: ml.product_id == self.product_a
         )
         self.assertFalse(
@@ -73,7 +73,7 @@ class TestMrpByproductAutoLot(CommonMrpByproductAutoCreateLot, TransactionCase):
         self.production = self._create_manufacturing_order(bom=self.bom)
         self.production.action_confirm()
         self.production.button_plan()
-        byproduct_move_line = self.production.move_byproduct_line_ids.filtered(
+        byproduct_move_line = self.production.move_byproduct_ids.move_line_ids.filtered(
             lambda ml: ml.product_id == self.product_b
         )
         byproduct_move_line.lot_id = existing_lot
@@ -93,7 +93,7 @@ class TestMrpByproductAutoLot(CommonMrpByproductAutoCreateLot, TransactionCase):
         self.production.button_plan()
         self.production.button_mark_done()
 
-        byproduct_move_line = self.production.move_byproduct_line_ids.filtered(
+        byproduct_move_line = self.production.move_byproduct_ids.move_line_ids.filtered(
             lambda ml: ml.product_id == self.product_b
         )
         self.assertFalse(
@@ -108,7 +108,7 @@ class TestMrpByproductAutoLot(CommonMrpByproductAutoCreateLot, TransactionCase):
         self.production.action_confirm()
         self.production.button_plan()
 
-        byproduct_move_line = self.production.move_byproduct_line_ids.filtered(
+        byproduct_move_line = self.production.move_byproduct_ids.move_line_ids.filtered(
             lambda ml: ml.product_id == self.product_serial
         )
 
@@ -120,7 +120,7 @@ class TestMrpByproductAutoLot(CommonMrpByproductAutoCreateLot, TransactionCase):
 
         # Check if lots are unique per move and per product if managed
         # per serial
-        move_lines_serial = self.production.move_byproduct_line_ids.filtered(
+        move_lines_serial = self.production.move_byproduct_ids.move_line_ids.filtered(
             lambda m: m.product_id.tracking == "serial" and m.product_id.auto_create_lot
         )
         serials = []

@@ -7,8 +7,7 @@ class MrpProduction(models.Model):
     def _set_auto_lot(self):
         """Create and assign lots to by-products in the production order"""
         for production in self:
-            # for move in production.move_finished_ids:
-            lines = production.mapped("move_byproduct_line_ids").filtered(
+            lines = production.mapped("move_byproduct_ids.move_line_ids").filtered(
                 lambda x: (
                     not x.lot_id
                     and not x.lot_name
