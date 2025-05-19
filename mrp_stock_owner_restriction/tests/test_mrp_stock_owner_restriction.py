@@ -54,7 +54,7 @@ class TestMrpStockOwnerRestriction(common.TransactionCase):
             {"bom_id": cls.bom.id, "product_id": cls.component.id, "product_qty": 1}
         )
         cls.owner = cls.env["res.partner"].create({"name": "Owner test"})
-        cls.finished_product.route_ids = [(6, 0, cls.manufacture_route.ids)]
+        # bosd fix cls.finished_product.route_ids = [(6, 0, cls.manufacture_route.ids)]
         cls.picking_type = cls.env["stock.picking.type"].search(
             [
                 ("code", "=", "mrp_operation"),
