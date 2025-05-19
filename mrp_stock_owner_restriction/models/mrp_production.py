@@ -113,7 +113,7 @@ class MrpProduction(models.Model):
                         "{common_owner_id} ({first_mo_owner.name})"
                     )
                 else:
-                    _logger.warning(
+                    _logger.info(
                         "MOs to be merged have different owner_ids. "
                         "Merged MO will not inherit an owner from this logic.\n"
                         "First MO owner: {first_mo_owner.name}"
@@ -127,7 +127,7 @@ class MrpProduction(models.Model):
                         "Merged MO will also have no owner_id from this logic."
                     )
                 else:
-                    _logger.warning(
+                    _logger.info(
                         "MOs to be merged have mixed owner_id status\n"
                         " (some have, some don't). "
                         "Merged MO will not inherit an owner from this logic."
