@@ -1,6 +1,6 @@
 {
     "name": "MRP Work Center Safety Symbols Specification",
-    "version": "18.0.1.0.0",
+    "version": "18.0.1.0.1",
     "summary": """
          This module enhances the link between Work Centers and Safety Symbols
          (provided by 'mrp_workcenter_safety_symbol') by allowing users to add

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
     <record id="view_mrp_workcenter_safety_specification_list" model="ir.ui.view">
         <field name="name">mrp.workcenter.safety.specification.list</field>
@@ -92,7 +92,7 @@
                 position="after"
             >
                 <group>
-                    <p class="oe_grey">
+                    <p class="text-muted">
                          Safety symbols associated with this work center. Add or click entries to specify details (e.g., PPE type, checks).
                      </p>
                 </group>
@@ -112,7 +112,7 @@
                         <field name="symbol_code" />
                         <field name="specification_notes" />
                         <templates>
-                            <t t-name="kanban-card">
+                            <t t-name="card">
                                 <div class="oe_kanban_card">
                                     <div
                                         class="oe_kanban_global_click"
