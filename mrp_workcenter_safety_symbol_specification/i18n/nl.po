@@ -1,0 +1,128 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: mrp_workcenter_safety_symbol_specification
+#: model:ir.model.fields,help:mrp_workcenter_safety_symbol_specification.field_mrp_workcenter_safety_specification__specification_notes
+msgid ""
+"Add specific details, e.g., 'Type P2 required', 'Use chemical resistant "
+"variant', 'Check before each use'."
+msgstr ""
+"Voeg specifieke details toe, bijv. 'Type P2 vereist', 'Gebruik chemisch "
+"bestendige variant', 'Controleer voor elk gebruik'."
+
+#. module: mrp_workcenter_safety_symbol_specification
+#: model_terms:ir.ui.view,arch_db:mrp_workcenter_safety_symbol_specification.view_mrp_workcenter_safety_specification_list
+msgid "Code"
+msgstr "Code"
+
+#. module: mrp_workcenter_safety_symbol_specification
+#: model:ir.model.fields,help:mrp_workcenter_safety_symbol_specification.field_mrp_workcenter__safety_specification_ids
+msgid ""
+"Define safety symbols required for this work center and add specific "
+"instructions."
+msgstr ""
+"Definieer de veiligheidssymbolen die vereist zijn voor deze werkplek en voeg"
+" specifieke instructies toe."
+
+#. module: mrp_workcenter_safety_symbol_specification
+#: model:ir.model.constraint,message:mrp_workcenter_safety_symbol_specification.constraint_mrp_workcenter_safety_specification_workcenter_symbol_uniq
+msgid "Each symbol can only be linked once per work center in specifications."
+msgstr ""
+"Elk symbool kan per werkplek slechts eenmaal aan een specificatie worden "
+"gekoppeld."
+
+#. module: mrp_workcenter_safety_symbol_specification
+#: model_terms:ir.ui.view,arch_db:mrp_workcenter_safety_symbol_specification.view_mrp_workcenter_safety_specification_form
+msgid "Enter specific details here..."
+msgstr "Voer hier specifieke details in..."
+
+#. module: mrp_workcenter_safety_symbol_specification
+#: model_terms:ir.ui.view,arch_db:mrp_workcenter_safety_symbol_specification.view_mrp_workcenter_safety_specification_list
+msgid "Icon"
+msgstr "Pictogram"
+
+#. modules: base_iso7010, mrp_workcenter_safety_symbol_specification
+#: model:ir.model.fields,help:base_iso7010.field_iso7010_symbol__image
+#: model:ir.model.fields,help:mrp_workcenter_safety_symbol_specification.field_mrp_workcenter_safety_specification__symbol_image
+msgid "Image representation of the symbol (preferably SVG)."
+msgstr "Afbeeldingsweergave van het symbool (bij voorkeur SVG)."
+
+#. modules: base_iso7010, mrp_workcenter_safety_symbol_specification
+#: model:ir.model.fields,field_description:base_iso7010.field_iso7010_symbol__iso_code
+#: model:ir.model.fields,field_description:mrp_workcenter_safety_symbol_specification.field_mrp_workcenter_safety_specification__symbol_code
+msgid "Iso Code"
+msgstr "ISO-code"
+
+#. module: mrp_workcenter_safety_symbol_specification
+#: model_terms:ir.ui.view,arch_db:mrp_workcenter_safety_symbol_specification.view_mrp_workcenter_safety_specification_form
+msgid "Safety Specification"
+msgstr "Veiligheidsspecificatie"
+
+#. module: mrp_workcenter_safety_symbol_specification
+#: model:ir.model.fields,field_description:mrp_workcenter_safety_symbol_specification.field_mrp_workcenter__safety_specification_ids
+#: model_terms:ir.ui.view,arch_db:mrp_workcenter_safety_symbol_specification.view_mrp_workcenter_safety_specification_list
+msgid "Safety Specifications"
+msgstr "Veiligheidsspecificaties"
+
+#. module: mrp_workcenter_safety_symbol_specification
+#: model:ir.model.fields,field_description:mrp_workcenter_safety_symbol_specification.field_mrp_workcenter_safety_specification__iso_symbol_id
+msgid "Safety Symbol"
+msgstr "Veiligheidssymbool"
+
+#. module: mrp_workcenter_safety_symbol_specification
+#: model_terms:ir.ui.view,arch_db:mrp_workcenter_safety_symbol_specification.mrp_workcenter_view_form_inherit_safety_specification
+msgid ""
+"Safety symbols associated with this work center. Add or click entries to "
+"specify details (e.g., PPE type, checks)."
+msgstr ""
+"Veiligheidssymbolen die bij deze werkplek horen. Voeg vermeldingen toe of "
+"klik erop om details op te geven (bijv. type PBM, controles)."
+
+#. module: mrp_workcenter_safety_symbol_specification
+#: model:ir.model.fields,field_description:mrp_workcenter_safety_symbol_specification.field_mrp_workcenter_safety_specification__sequence
+msgid "Sequence"
+msgstr "Volgorde"
+
+#. module: mrp_workcenter_safety_symbol_specification
+#: model:ir.model.fields,field_description:mrp_workcenter_safety_symbol_specification.field_mrp_workcenter_safety_specification__specification_notes
+#: model_terms:ir.ui.view,arch_db:mrp_workcenter_safety_symbol_specification.view_mrp_workcenter_safety_specification_form
+msgid "Specification / Notes"
+msgstr "Specificatie / Notities"
+
+#. module: mrp_workcenter_safety_symbol_specification
+#: model_terms:ir.ui.view,arch_db:mrp_workcenter_safety_symbol_specification.view_mrp_workcenter_safety_specification_list
+msgid "Symbol"
+msgstr "Symbool"
+
+#. modules: base_iso7010, mrp_workcenter_safety_symbol_specification
+#: model:ir.model.fields,field_description:base_iso7010.field_iso7010_symbol__image
+#: model:ir.model.fields,field_description:mrp_workcenter_safety_symbol_specification.field_mrp_workcenter_safety_specification__symbol_image
+msgid "Symbol Image"
+msgstr "Symboolafbeelding"
+
+#. modules: base_iso7010, mrp_workcenter_safety_symbol_specification
+#: model:ir.model.fields,help:base_iso7010.field_iso7010_symbol__iso_code
+#: model:ir.model.fields,help:mrp_workcenter_safety_symbol_specification.field_mrp_workcenter_safety_specification__symbol_code
+msgid "The official ISO 7010 code, e.g., M001, W002, P003, E001, F001."
+msgstr "De officiële ISO 7010-code, bijv. M001, W002, P003, E001, F001."
+
+#. module: mrp_workcenter_safety_symbol_specification
+#: model:ir.model,name:mrp_workcenter_safety_symbol_specification.model_mrp_workcenter
+#: model:ir.model.fields,field_description:mrp_workcenter_safety_symbol_specification.field_mrp_workcenter_safety_specification__workcenter_id
+msgid "Work Center"
+msgstr "Werkplek"
+
+#. module: mrp_workcenter_safety_symbol_specification
+#: model:ir.model,name:mrp_workcenter_safety_symbol_specification.model_mrp_workcenter_safety_specification
+msgid "Work Center Safety Symbol Specification"
+msgstr "Veiligheidssymboolspecificatie werkplek"
